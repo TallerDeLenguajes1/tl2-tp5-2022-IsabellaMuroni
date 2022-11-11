@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\taller_2\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\Views\\Cadete\\AltaCadete.cshtml",
+      "TargetPath": "Views\\Cadete\\AltaCadete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\taller_2\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\Views\\Cadeteria\\Cadeteria.cshtml",
       "TargetPath": "Views\\Cadeteria\\Cadeteria.cshtml",
       "FileKind": "mvc"

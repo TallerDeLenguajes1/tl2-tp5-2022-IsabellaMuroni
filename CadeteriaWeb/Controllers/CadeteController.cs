@@ -19,18 +19,21 @@ namespace CadeteriaWeb.Controllers
         {
             _logger = logger;
         }
-
-        /*public IActionResult Cadeteria()
-        {
-            return View();
-        }*/
-
+        
         [HttpGet]
         public IActionResult Cadete ()
         {
             
             return View();
         }
+
+        /*
+        [HttpGet]
+        public IActionResult AltaCadete ()
+        {
+            return View (new AltaCadeteViewModel() { nombreCadete = "Juan", Direccion = "Av. Independencia 1800", Telefono = 555});
+        }*/
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

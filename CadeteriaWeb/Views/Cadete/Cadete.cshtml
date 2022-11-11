@@ -4,19 +4,30 @@
 
 <h1>Lista de Cadetes</h1>
 
-<table>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-primary">Crear Cadete</button>
+  </div>
+</div>
+ 
+<table class="table">
   <thead>
-    <th>Nombre</th>
-    <th>Dirección</th>
-    <th>Teléfono</th>
-    <th>Acciones</th>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Teléfono</th>
+      <th scope="col">Acciones</th>
+    </tr>
   </thead>
-  <tbody>
+  <tbody class="table-group-divider">
     <tr>
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td>
+        <i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i>
+        <i class="bi bi-trash" style="color: red;"></i>
+      </td>
     </tr>
   </tbody>
 </table>
