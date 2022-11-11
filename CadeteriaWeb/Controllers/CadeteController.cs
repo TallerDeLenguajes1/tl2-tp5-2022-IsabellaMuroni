@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CadeteriaWeb.Models;
 using CadeteriaWeb.ViewModels;
-
 namespace CadeteriaWeb.Controllers
 {
     [Route("Cadete")]

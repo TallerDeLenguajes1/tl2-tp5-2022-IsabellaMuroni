@@ -18,7 +18,9 @@ namespace CadeteriaWeb.Models
         public string nombre { get => Nombre; set => Nombre = value; }
         public string direccion { get => Direccion; set => Direccion = value; }
         public int telefono { get => Telefono; set => Telefono = value; }
-        public List<Pedido> listaPedidos { get => ListaPedidos; set => ListaPedidos; }
+        public List<Pedido> listaPedidos { get => ListaPedidos; set => ListaPedidos = value; }
+
+        //public List<Pedido> listaPedidos { get => ListaPedidos; set => ListaPedidos; }
 
         //Constructores
         public Cadete ()

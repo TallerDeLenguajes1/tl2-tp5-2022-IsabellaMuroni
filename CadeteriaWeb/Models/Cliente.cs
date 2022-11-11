@@ -22,10 +22,7 @@ namespace CadeteriaWeb.Models
         public string DatosReferenciaDireccion { get => datosReferenciaDireccion; set => datosReferenciaDireccion = value; }
 
         //Constructores
-        public Cliente ()
-        {
-
-        }
+        public Cliente (){}
 
         public Cliente (string nombre, string apellido, string dir, int tel, string datosRefDir)
         {

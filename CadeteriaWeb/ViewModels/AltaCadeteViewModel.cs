@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CadeteriaWeb.ViewModels
 {
-    public class CadeteViewModel
+    public class AltaCadeteViewModel
     {
         [Required][StringLength(100)][Display (Name = "Nombre del Cadete")]
         public string nombreCadete { get; set; }
