@@ -5,10 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using CadeteriaWeb.Models;
+using CadeteriaWeb.ViewModels;
 
 namespace CadeteriaWeb.Controllers
 {
-    [Route("[controller]")]
+    [Route("Cadeteria")]
     public class CadeteriaController : Controller
     {
         private readonly ILogger<CadeteriaController> _logger;
@@ -18,8 +20,15 @@ namespace CadeteriaWeb.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        /*public IActionResult Cadeteria()
         {
+            return View();
+        }*/
+
+        [HttpGet]
+        public IActionResult Cadeteria ()
+        {
+            
             return View();
         }
 
