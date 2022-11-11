@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CadeteriaWeb.Models;
 using CadeteriaWeb.ViewModels;
+
 namespace CadeteriaWeb.Controllers
 {
     [Route("Cadete")]
@@ -19,14 +20,15 @@ namespace CadeteriaWeb.Controllers
             _logger = logger;
         }
 
-       
-        public IActionResult Index ()
+        /*public IActionResult Cadeteria()
         {
             return View();
-        }
+        }*/
 
+        [HttpGet]
         public IActionResult Cadete ()
         {
+            
             return View();
         }
 
