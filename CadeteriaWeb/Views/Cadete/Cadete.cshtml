@@ -3,15 +3,21 @@
     ViewData["Title"] = "Lista de Cadetes";
 }
 
-<h1>Lista de Cadetes</h1>
-
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group me-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-outline-primary">
-      <a asp-action="AltaCadete"><i class="bi bi-person-add"></i>Crear Cadete</a>
-    </button>
-  </div>
+<div class="row">
+    <div class="col-8"><h1>Lista de Cadetes</h1></div>
+    <div class="col-4">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-primary">
+            <a asp-action="AltaCadete"><i class="bi bi-person-plus" style="font-size: 2rem;"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>
 </div>
+
+
+
  
 <table class="table">
   <thead>
