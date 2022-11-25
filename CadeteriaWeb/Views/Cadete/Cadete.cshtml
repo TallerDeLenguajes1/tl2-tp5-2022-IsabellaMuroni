@@ -35,7 +35,7 @@
           <td>@item.direccion</td>
           <td>@item.telefono</td>
           <td>
-            <i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i>
+             <a asp-action="EditarCadete" asp-route-id="@item.id"><i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i></a>
             <i class="bi bi-trash" style="color: red;"></i>
           </td>
         </tr>

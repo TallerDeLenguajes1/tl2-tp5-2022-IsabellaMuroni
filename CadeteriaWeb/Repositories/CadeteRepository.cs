@@ -29,7 +29,7 @@ namespace CadeteriaWeb.Repositories
             connection.Open();
 
             //Consulta
-            var queryString = "select * from Cadete where id_cadete = {idCadete};";
+            var queryString = $"select * from Cadete where id_cadete = {idCadete};";
             var comando = new SQLiteCommand(queryString, connection);
 
             var nuevoCadete = new Cadete ();
@@ -83,7 +83,7 @@ namespace CadeteriaWeb.Repositories
             var _direccion = cadete.direccion;
            
             //Consulta
-            var queryString = "update Cadete set nombre = '{_nombre}', telefono = '{_telefono}', direccion = '{_direccion}' where id_cadete = '{id}';";
+            var queryString = $"update Cadete set nombre = '{_nombre}', telefono = '{_telefono}', direccion = '{_direccion}' where id_cadete = '{id}';";
             var comando = new SQLiteCommand(queryString, connection);
             
             comando.ExecuteNonQuery();

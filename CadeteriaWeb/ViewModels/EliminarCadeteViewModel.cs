@@ -6,6 +6,6 @@ namespace CadeteriaWeb.ViewModels
     {
         public int id { get; set; }
         
-        public string nombreCadete { get; set; }
+        public string nombre { get; set; }
     }
 }

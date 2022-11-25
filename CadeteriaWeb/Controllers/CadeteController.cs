@@ -53,9 +53,21 @@ namespace CadeteriaWeb.Controllers
             return RedirectToAction("Cadete"); 
         }
 
-        public IActionResult EditarCadete ()
+        public IActionResult EditarCadete (int id)
         {
-            return View();
+            var cadete = _repoCadete.GetCadete(id);
+            EditarCadeteViewModel editarCade = _mapper.Map<EditarCadeteViewModel>(cadete);
+            
+            return View("EditarCadete");
+        }
+
+        [HttpPost]
+        public IActionResult EditarCadete (EditarCadeteViewModel cadeteVM)
+        {
+            var cadete = _mapper.Map<Cadete>(cadeteVM);
+            _repoCadete.Update(cadete);
+            
+            return RedirectToAction("Cadete");
         }
 
         //Probando Base de Datos

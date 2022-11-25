@@ -16338,11 +16338,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\taller_2\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\Views\\Cadete\\MostrarCadete.cshtml",
-      "TargetPath": "Views\\Cadete\\MostrarCadete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\taller_2\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

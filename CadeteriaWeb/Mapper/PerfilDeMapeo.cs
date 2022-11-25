@@ -15,6 +15,8 @@ namespace CadeteriaWeb.Mapper
             //Cadetes: Alta, Baja, Modificación
             CreateMap<Cadete, AltaCadeteViewModel>().ReverseMap();
             CreateMap<Cadete, MostrarCadetesViewModel>().ReverseMap();
+            CreateMap<Cadete, EditarCadeteViewModel>().ReverseMap();
+            CreateMap<Cadete, EliminarCadeteViewModel>().ReverseMap();
         }
         
     }
