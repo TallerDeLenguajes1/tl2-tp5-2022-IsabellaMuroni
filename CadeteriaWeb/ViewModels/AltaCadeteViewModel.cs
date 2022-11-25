@@ -12,5 +12,14 @@ namespace CadeteriaWeb.ViewModels
 
         [Required][Phone]
         public int Telefono { get; set; }
+
+        public AltaCadeteViewModel () {}
+
+        public AltaCadeteViewModel (string nombre, string dir, int tel)
+        {
+            this.nombreCadete = nombre;
+            this.Direccion = dir;
+            this.Telefono = tel;
+        }
     }
 }
