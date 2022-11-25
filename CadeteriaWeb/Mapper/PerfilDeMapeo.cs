@@ -13,8 +13,8 @@ namespace CadeteriaWeb.Mapper
         public PerfilDeMapeo ()
         {
             //Cadetes: Alta, Baja, Modificación
-            CreateMap<Cadete, AltaCadeteViewModel>();
-            CreateMap<Cadete, MostrarCadetesViewModel>();
+            CreateMap<Cadete, AltaCadeteViewModel>().ReverseMap();
+            CreateMap<Cadete, MostrarCadetesViewModel>().ReverseMap();
         }
         
     }

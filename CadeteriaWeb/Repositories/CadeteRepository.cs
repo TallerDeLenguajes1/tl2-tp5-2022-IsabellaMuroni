@@ -52,9 +52,9 @@ namespace CadeteriaWeb.Repositories
 
         public void Insert (Cadete cadete)
         {
-            var _nombre = cadete.nombre;
-            var _telefono = cadete.telefono;
-            var _direccion = cadete.direccion;
+            var nombre_ = cadete.nombre;
+            var telefono_ = cadete.telefono;
+            var direccion_ = cadete.direccion;
 
             var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
             var connection = new SQLiteConnection(cadenaDeConexion);
@@ -62,7 +62,7 @@ namespace CadeteriaWeb.Repositories
             connection.Open();
 
             //Consulta
-            var queryString = "insert into Cadete (nombre, telefono, direccion) values ('{_nombre}','{_telefono}', '{_direccion}');";
+            var queryString = "insert into Cadete (nombre, telefono, direccion)" + " values ('"+nombre_+"','"+telefono_+"','"+direccion_+"');";
             var comando = new SQLiteCommand(queryString, connection);
             
             comando.ExecuteNonQuery();

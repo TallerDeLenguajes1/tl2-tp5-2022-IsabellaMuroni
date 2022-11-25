@@ -5,18 +5,21 @@ namespace CadeteriaWeb.ViewModels
     public class MostrarCadetesViewModel
     {
         public int id { get; set; }
-        public string nombreCadete { get; set; }
-        public string Direccion { get; set; }
-        public int Telefono { get; set; }
+         [Required]
+        public string nombre { get; set; }
+         [Required]
+        public string direccion { get; set; }
+         [Required][Phone]
+        public int telefono { get; set; }
 
         public MostrarCadetesViewModel (){ }
         
-        public MostrarCadetesViewModel(int _id, string nombre, string direccion, int tel)
+        /* public MostrarCadetesViewModel(int _id, string nombre, string direccion, int tel)
         {
             this.id = _id;
-            this.nombreCadete = nombre;
+            this.Nombre = nombre;
             this.Direccion = direccion;
             this.Telefono = tel;
-        }
+        } */
     }
 }
