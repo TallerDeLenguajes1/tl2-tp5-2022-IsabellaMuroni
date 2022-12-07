@@ -70,43 +70,23 @@ namespace CadeteriaWeb.Controllers
             return RedirectToAction("Cadete");
         }
 
-        //Probando Base de Datos
-
-        /*[HttpGet]
-        public List<Cadete> GetCadetes ()
+        public IActionResult Eliminar_Cadete (int id)
         {
-            List<Cadete> cadetes = new List<Cadete>();
-            //List<MostrarCadetesViewModel> cadetes = new List<MostrarCadetesViewModel>();
+            var cadete = _repoCadete.GetCadete(id);
+            EliminarCadeteViewModel eliminarCade = _mapper.Map<EliminarCadeteViewModel>(cadete);
 
-            var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
-            var connection = new SQLiteConnection(cadenaDeConexion);
+            _repoCadete.Delete(id);
 
-            connection.Open();
+            return RedirectToAction("Cadete");
+        }
 
-            var queryString = "select * from Cadete;";//Consulta
-            var comando = new SQLiteCommand(queryString, connection);
-            //List<string> cadetes = new List<string>();
-
-            using (var reader = comando.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    //var nombre = reader["cadete nombre"].ToString();
-                    //cadetes.Add(nombre);
-                    var _id = Convert.ToInt32(reader[0]);
-                    var nombre = reader[1].ToString();
-                    var telefono = Convert.ToInt32(reader[2]);
-                    var direccion = reader[3].ToString();
-                    cadetes.Add(new Cadete (_id, nombre,  direccion, telefono));
-                    //cadetes.Add(new MostrarCadetesViewModel());
-                }
-            }
-
-             connection.Close();
-
-            return cadetes;
-        }*/
-        
+        /* public IActionResult EliminarCadete (int id)
+        {
+            _repoCadete.Delete(id);
+            
+            return RedirectToAction("Cadete");
+        } */
+                
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

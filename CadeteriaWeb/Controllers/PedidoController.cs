@@ -8,17 +8,17 @@ using Microsoft.Extensions.Logging;
 
 namespace CadeteriaWeb.Controllers
 {
-    //[Route("[controller]")]
-    public class ClienteController : Controller
+    [Route("[controller]")]
+    public class PedidoController : Controller
     {
-        private readonly ILogger<ClienteController> _logger;
+        private readonly ILogger<PedidoController> _logger;
 
-        public ClienteController(ILogger<ClienteController> logger)
+        public PedidoController(ILogger<PedidoController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult AltaCliente ()
+        public IActionResult Index()
         {
             return View();
         }

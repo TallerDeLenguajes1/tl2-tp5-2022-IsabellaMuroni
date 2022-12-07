@@ -13,6 +13,7 @@
                 <div class="col-md-6">
                     <label for="inputName" class="form-label"asp-for="@Model.nombre"></label></label>
                     <input type="text" class="form-control" id="inputEmail4" asp-for="@Model.nombre">
+                    <span asp-validation-for="nombre" class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
                     <label for="inputTelefono" class="form-label" asp-for="@Model.telefono">Teléfono</label>

@@ -17,7 +17,7 @@ namespace CadeteriaWeb.Repositories
         void Insert (Cadete cadete);
         void Update (Cadete cadete);
         void Delete (int idCadete);
-    }
+    } 
 
     public class CadeteRepository : ICadeteRepository
     {
@@ -99,7 +99,7 @@ namespace CadeteriaWeb.Repositories
             connection.Open();
 
             //Consulta
-            var queryString = "delete from Cadete where id_cadete = '{id}';";
+            var queryString = $"delete from Cadete where id_cadete = '{id}';";
             var comando = new SQLiteCommand(queryString, connection);
             
             comando.ExecuteNonQuery();
